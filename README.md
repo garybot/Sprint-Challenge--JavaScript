@@ -42,6 +42,14 @@ Closure is a function within a function. The inner function "remembers" the vari
 
 4. Describe the four rules of the 'this' keyword.
 
+Window/global binding is the default binding of `this`. `this` refers to the window itself in the browser, and whatever the global object is in other contexts.
+
+Binding with the `new` keyword binds `this` to the newly created object.
+
+Implicit binding is the binding that created when you create an object literal and call a method of that object.
+
+Explicit binding uses `call()`, `apply()`, or `bind()`
+
 5. Why do we need super() in an extended class?
 
 We use super to allow an extended class access the constructor of the class it extends.
